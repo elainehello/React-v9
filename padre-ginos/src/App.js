@@ -1,3 +1,12 @@
+// not curly braces - import the entiry library as one top-level object
+// or import the default library the author has defined as export
+// (default export)
+import React from "react";
+// called name import - go to the ReactDom library and only get the
+// createRoot function
+// (named export)
+import { createRoot } from "react-dom";
+
 const Pizza = (props) => {
   return React.createElement("div", {}, [
     React.createElement("h1", {}, props.name),
@@ -32,5 +41,5 @@ const App = () => {
 };
 
 const container = document.getElementById("root");
-const root = ReactDOM.createRoot(container);
+const root = createRoot(container);
 root.render(React.createElement(App));

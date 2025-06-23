@@ -5,7 +5,7 @@ import React from "react";
 // called name import - go to the ReactDom library and only get the
 // createRoot function
 // (named export)
-import { createRoot } from "react-dom";
+import { createRoot } from "react-dom/client";
 
 const Pizza = (props) => {
   return React.createElement("div", {}, [

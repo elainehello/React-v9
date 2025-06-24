@@ -26,7 +26,7 @@ export default function Order() {
                             <option value="big_meat">The Big Meat Pizza</option>
                         </select>
                     </div>
-                    <div>
+                    <div                    >
                         <label htmlFor="pizza-size">Pizza Size</label>
                         <div>
                             <span>
@@ -35,6 +35,7 @@ export default function Order() {
                                 name="pizza-size" 
                                 value="S" 
                                 id="pizza-s" 
+                                onChange={(event) => setPizzaSize(event.target.value)}
                                 />
                                 <label htmlFor="pizza-s">Small</label>
                             </span>
@@ -44,6 +45,7 @@ export default function Order() {
                                 name="pizza-size" 
                                 value="M" 
                                 id="pizza-m" 
+                                onChange={(event) => setPizzaSize(event.target.value)}
                                 />
                                 <label htmlFor="pizza-m">Medium</label>
                             </span>
@@ -53,6 +55,7 @@ export default function Order() {
                                 name="pizza-size" 
                                 value="L" 
                                 id="pizza-l" 
+                                onChange={(event) => setPizzaSize(event.target.value)}
                                 />
                                 <label htmlFor="pizza-l">Large</label>
                             </span>
